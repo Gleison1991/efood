@@ -1,3 +1,5 @@
-const Header = () => <header>cabeçalho</header>
+import React from 'react'
 
-export default Header
+export default function Header() {
+  return <header>cabeçalho</header>
+}
