@@ -1,5 +1,10 @@
-import React from 'react'
+import { HeaderBar } from './styles'
 
-export default function Header() {
-  return <header>cabeçalho</header>
-}
+import logo from '../../assets/images/logo.png'
+
+const Header = () => (
+  <HeaderBar>
+    <img src={logo} alt="EFOOD" />
+  </HeaderBar>
+)
+export default Header
