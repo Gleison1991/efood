@@ -16,5 +16,5 @@ const Banner = () => (
     </a>
   </Imagem>
 )
-//continuar do minuto 10:37
+
 export default Banner

@@ -15,8 +15,9 @@ export const Imagem = styled.div`
     margin-left: 336px;
     margin-right: auto;
     width: 125px;
-    position: fixed;
     top: 0;
+    position: fixed;
+    z-index: 1;
   }
 `
 
