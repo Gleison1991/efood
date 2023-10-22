@@ -1,51 +1,25 @@
+import Prato from '../../models/Prato'
 import Product from '../Product'
 
 import { Container, List } from './styles'
 
-type Props = {
-  background: 'Pink'
+export type Props = {
+  pratos: Prato[]
 }
 
-const ProductsList = ({ background }: Props) => (
-  <Container>
+const ProductsList = ({ pratos }: Props) => (
+  <Container pratos={pratos}>
     <div className="container">
       <List>
-        <Product
-          image="//placehold.it/487x217"
-          infos={['Destaque da semana', 'Japonesa']}
-          title="Nome do prato"
-          description={'teste'}
-        />
-        <Product
-          image="//placehold.it/487x217"
-          infos={['Italiana']}
-          title="Nome do prato"
-          description={'teste'}
-        />
-        <Product
-          image="//placehold.it/487x217"
-          infos={['Italiana']}
-          title="Nome do prato"
-          description={'teste'}
-        />
-        <Product
-          image="//placehold.it/487x217"
-          infos={['Italiana']}
-          title="Nome do prato"
-          description={'teste'}
-        />
-        <Product
-          image="//placehold.it/487x217"
-          infos={['Italiana']}
-          title="Nome do prato"
-          description={'teste'}
-        />
-        <Product
-          image="//placehold.it/487x217"
-          infos={['Italiana']}
-          title="Nome do prato"
-          description={'teste'}
-        />
+        {pratos.map((prato) => (
+          <Product
+            key={prato.id}
+            image={prato.image}
+            infos={prato.infos}
+            title={prato.title}
+            description={prato.description}
+          />
+        ))}
       </List>
     </div>
   </Container>

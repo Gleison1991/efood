@@ -6,6 +6,12 @@ export const Card = styled.div`
   border: 1px solid ${cores.rosa};
   position: relative;
 `
+export const Image = styled.img`
+  object-fit: cover;
+  width: 486px;
+  height: 217px;
+`
+
 export const ContainerDescricao = styled.div`
   padding: 8px;
   text-align: left;
@@ -26,6 +32,7 @@ export const Descricao = styled.p`
   color: ${cores.rosa};
   display: block;
   text-align: left;
+  padding-bottom: 20px;
 `
 
 export const Infos = styled.div`

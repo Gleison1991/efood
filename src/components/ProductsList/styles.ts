@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.section`
+import { Props } from '.'
+
+export const Container = styled.section<Omit<Props, 'Pink'>>`
   padding: 80px 0;
 `
 
