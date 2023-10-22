@@ -4,6 +4,7 @@ import { cores } from '../../styles'
 export const Card = styled.div`
   background-color: ${cores.branco};
   border: 1px solid ${cores.rosa};
+  position: relative;
 `
 export const ContainerDescricao = styled.div`
   padding: 8px;
@@ -25,4 +26,12 @@ export const Descricao = styled.p`
   color: ${cores.rosa};
   display: block;
   text-align: left;
+`
+
+export const Infos = styled.div`
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 `
