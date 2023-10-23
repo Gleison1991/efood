@@ -62,4 +62,3 @@ const Home = () => (
 )
 
 export default Home
-//continuar do minuto 17:34 da aula construindo páginas
