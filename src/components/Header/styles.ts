@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 
   div {
     img {
-      width: 100px; // Ajuste este valor conforme necessário
+      width: 125px;
       height: auto;
     }
   }
