@@ -3,6 +3,7 @@ import Prato from '../../models/Prato'
 
 import Sushi from '../../assets/images/sushi.png'
 import ComidaItaliana from '../../assets/images/comidaItaliana.png'
+import Banner from '../../components/Banner'
 
 const pratos: Prato[] = [
   {
@@ -54,9 +55,10 @@ const pratos: Prato[] = [
     image: ComidaItaliana
   }
 ]
-
+// linha 61 adicionada
 const Home = () => (
   <>
+    <Banner />
     <ProductsList pratos={pratos} />
   </>
 )
