@@ -22,5 +22,5 @@ export const Titulo = styled.h2`
   font-weight: bold;
   max-width: 539px;
   margin-top: 260px;
-  margin-left: 190px;
+  margin-left: 230px;
 `
