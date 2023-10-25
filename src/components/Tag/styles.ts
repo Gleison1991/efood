@@ -10,4 +10,8 @@ export const TagContainer = styled.div<Props>`
   font-weight: bold;
   padding: ${(props) => (props.size === 'big' ? '4px 84px' : '4px 6px')};
   display: inline-block;
+
+  &:hover {
+    background-color: ${cores.rosaDoHover};
+  }
 `
