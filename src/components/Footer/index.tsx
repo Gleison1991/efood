@@ -1,4 +1,11 @@
-import { Container, IconLink, FooterText, Logo, SocialIcons } from './styles'
+import {
+  Container,
+  Icon,
+  IconLink,
+  FooterText,
+  Logo,
+  SocialIcons
+} from './styles'
 
 import logo from '../../assets/images/logo.png'
 import facebookLogo from '../../assets/images/facebookLogo.png'
@@ -12,13 +19,13 @@ const Footer = () => (
     </Logo>
     <SocialIcons>
       <IconLink href="https://www.facebook.com/seu_usuario">
-        <img src={facebookLogo} alt="Facebook" />
+        <Icon src={facebookLogo} alt="Facebook" />
       </IconLink>
       <IconLink href="https://www.instagram.com/seu_usuario">
-        <img src={instagramLogo} alt="Instagram" />
+        <Icon src={instagramLogo} alt="Instagram" />
       </IconLink>
       <IconLink href="https://twitter.com/seu_usuario">
-        <img src={twitterLogo} alt="Twitter" />
+        <Icon src={twitterLogo} alt="Twitter" />
       </IconLink>
     </SocialIcons>
     <FooterText>

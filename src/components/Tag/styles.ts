@@ -13,5 +13,7 @@ export const TagContainer = styled.div<Props>`
 
   &:hover {
     background-color: ${cores.rosaDoHover};
+    transform: scale(1.1);
+    transition: transform 0.2s;
   }
 `

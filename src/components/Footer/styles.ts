@@ -24,14 +24,26 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: center;
 `
-
-export const IconLink = styled.a`
+export const Icon = styled.img`
   width: 24px;
   height: 24px;
+
+  &:hover {
+    transform: scale(1.3);
+    transition: transform 0.2s;
+  }
+`
+
+export const IconLink = styled.a`
   margin-right: 8px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
   }
 `
 
