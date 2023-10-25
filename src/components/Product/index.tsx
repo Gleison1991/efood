@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Tag from '../Tag'
 
 import {
@@ -27,7 +28,9 @@ export const Product = ({ title, description, infos, image }: Props) => (
     <ContainerDescricao>
       <Titulo>{title}</Titulo>
       <Descricao>{description}</Descricao>
-      <Tag>Saiba mais</Tag>
+      <Link to="/restaurantes">
+        <Tag>Saiba mais</Tag>
+      </Link>
     </ContainerDescricao>
   </Card>
 )
