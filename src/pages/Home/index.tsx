@@ -55,7 +55,7 @@ const pratos: Prato[] = [
     image: ComidaItaliana
   }
 ]
-// linha 61 adicionada
+
 const Home = () => (
   <>
     <Banner />

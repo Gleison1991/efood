@@ -17,6 +17,7 @@ export const HeaderContainer = styled.header`
     img {
       width: 125px;
       height: auto;
+      margin-left: 125px;
     }
   }
 
@@ -42,7 +43,7 @@ export const Links = styled.ul`
 `
 
 export const LinkItem = styled.li`
-  margin-left: 116px; // Ajuste este valor conforme necessário
+  margin-left: 116px;
 `
 
 export const LinkCart = styled.a`
