@@ -1,6 +1,6 @@
 import Prato from '../../models/Prato'
 import Product from '../Product'
-
+import Estrelinha from '../../assets/images/estrela.png'
 import { Container, List } from './styles'
 
 export type Props = {
@@ -18,6 +18,8 @@ const ProductsList = ({ pratos }: Props) => (
             infos={prato.infos}
             title={prato.title}
             description={prato.description}
+            avaliacao={'4,9'}
+            estrela={Estrelinha}
           />
         ))}
       </List>

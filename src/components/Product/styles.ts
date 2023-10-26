@@ -42,3 +42,19 @@ export const Infos = styled.div`
   top: 16px;
   right: 16px;
 `
+export const Avaliacao = styled.h3`
+  font-weight: bold;
+  font-size: 18px;
+  color: ${cores.rosa};
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: right;
+`
+
+export const Estrela = styled.img`
+  object-fit: cover;
+  width: 21px;
+  height: 21px;
+  margin-left: 8px;
+`

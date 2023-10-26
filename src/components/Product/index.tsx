@@ -7,7 +7,9 @@ import {
   Card,
   Descricao,
   Titulo,
-  ContainerDescricao
+  ContainerDescricao,
+  Avaliacao,
+  Estrela
 } from './styles'
 
 type Props = {
@@ -15,9 +17,18 @@ type Props = {
   description: string
   infos: string[]
   image: string
+  avaliacao: string
+  estrela: string
 }
 
-export const Product = ({ title, description, infos, image }: Props) => (
+export const Product = ({
+  title,
+  description,
+  infos,
+  image,
+  avaliacao,
+  estrela
+}: Props) => (
   <Card>
     <Image src={image} alt={title} />
     <Infos>
@@ -27,6 +38,10 @@ export const Product = ({ title, description, infos, image }: Props) => (
     </Infos>
     <ContainerDescricao>
       <Titulo>{title}</Titulo>
+      <Avaliacao>
+        {avaliacao}
+        <Estrela src={estrela} alt="estrela" />
+      </Avaliacao>
       <Descricao>{description}</Descricao>
       <Link to="/restaurantes">
         <Tag>Saiba mais</Tag>

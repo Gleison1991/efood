@@ -16,7 +16,7 @@ const rotas = createBrowserRouter([
     element: <Restaurantes />
   }
 ])
-// tirei linha 21. entre a div <Banner />
+
 function App() {
   return (
     <>
