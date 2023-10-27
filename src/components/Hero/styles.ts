@@ -6,7 +6,7 @@ export const Banner = styled.div`
   position: relative;
   display: block;
   height: 280px;
-  width: 1366px;
+  max-width: 1366px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -51,6 +51,8 @@ export const Infos = styled.div`
     color: ${cores.branco};
     font-weight: 100;
     margin-bottom: 156px;
+    margin-left: -30px;
+    opacity: 0.56;
   }
 
   p {
@@ -60,5 +62,6 @@ export const Infos = styled.div`
     width: 676px;
     height: 33px;
     text-align: left;
+    margin-left: -30px;
   }
 `
