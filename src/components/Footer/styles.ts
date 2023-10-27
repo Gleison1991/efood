@@ -6,11 +6,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
-  width: 1366px;
   height: 298px;
   background: ${cores.rosaClaro};
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
 `
 
 export const Logo = styled.div`

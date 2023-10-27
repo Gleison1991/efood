@@ -1,18 +1,19 @@
-import { Imagem, Logo, Titulo } from './styles'
+import { Link } from 'react-router-dom'
 
-import bannerImg from '../../assets/images/Vector.png'
+import { HeaderBar, TituloHome } from './styles'
+
 import logo from '../../assets/images/logo.png'
 
-const Banner = () => (
-  <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
-    <div className="container">
-      <Logo src={logo} alt="Efood" />
-      <Titulo>
-        Viva experiências gastronômicas <br />
-        no conforto da sua casa
-      </Titulo>
-    </div>
-  </Imagem>
+const HeaderHome = () => (
+  <HeaderBar>
+    <Link to="/">
+      <img src={logo} alt="EFOOD" />
+    </Link>
+    <TituloHome>
+      Viva experiências gastronômicas <br />
+      no conforto da sua casa
+    </TituloHome>
+  </HeaderBar>
 )
 
-export default Banner
+export default HeaderHome

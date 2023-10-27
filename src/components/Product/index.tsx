@@ -37,11 +37,19 @@ export const Product = ({
       ))}
     </Infos>
     <ContainerDescricao>
-      <Titulo>{title}</Titulo>
-      <Avaliacao>
-        {avaliacao}
-        <Estrela src={estrela} alt="estrela" />
-      </Avaliacao>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}
+      >
+        <Titulo>{title}</Titulo>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Avaliacao>{avaliacao}</Avaliacao>
+          <Estrela src={estrela} alt="Estrela" />
+        </div>
+      </div>
       <Descricao>{description}</Descricao>
       <Link to="/restaurantes">
         <Tag>Saiba mais</Tag>

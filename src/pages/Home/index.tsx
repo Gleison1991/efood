@@ -3,7 +3,8 @@ import Prato from '../../models/Prato'
 
 import Sushi from '../../assets/images/sushi.png'
 import ComidaItaliana from '../../assets/images/comidaItaliana.png'
-import Banner from '../../components/Banner'
+import HeaderHome from '../../components/Banner'
+import Footer from '../../components/Footer'
 
 const pratos: Prato[] = [
   {
@@ -58,8 +59,9 @@ const pratos: Prato[] = [
 
 const Home = () => (
   <>
-    <Banner />
+    <HeaderHome />
     <ProductsList pratos={pratos} />
+    <Footer />
   </>
 )
 
