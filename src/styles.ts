@@ -7,6 +7,7 @@ export const cores = {
   rosaClaro: '#FFEBD9',
   brancoBeije: '#FFF8F2',
   branco: '#FFF',
+  preto: '#000',
   background: 'rgba(0, 0, 0, 0.80)'
 }
 

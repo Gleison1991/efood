@@ -20,7 +20,6 @@ function App() {
     <>
       <GlobalCss />
       <div className="container"></div>
-
       <RouterProvider router={rotas} />
     </>
   )

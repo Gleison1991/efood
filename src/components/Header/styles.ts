@@ -43,7 +43,7 @@ export const Links = styled.ul`
 `
 
 export const LinkItem = styled.li`
-  margin-left: 116px;
+  margin-left: 145px;
 `
 
 export const LinkCart = styled.a`

@@ -16,7 +16,7 @@ export const Banner = styled.div`
 
   &::after {
     position: absolute;
-    background-color: #000;
+    background-color: ${cores.preto};
     width: 100%;
     height: 100%;
     top: 0;

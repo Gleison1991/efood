@@ -3,7 +3,6 @@ import Header from '../../components/Header'
 import PratoRestaurante from '../../models/PratoRestaurante'
 import Esfirra from '../../assets/images/infirra.png'
 import ProductsListRestaurant from '../../components/ProductListRestaurant'
-import BannerPerfil from '../../components/BannerPerfil'
 import Hero from '../../components/Hero'
 import Footer from '../../components/Footer'
 
