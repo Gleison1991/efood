@@ -10,6 +10,7 @@ export const Container = styled.div`
   background: ${cores.rosaClaro};
   box-sizing: border-box;
   width: 100%;
+  margin-top: -50px;
 `
 
 export const Logo = styled.div`

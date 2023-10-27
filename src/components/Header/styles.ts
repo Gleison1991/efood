@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 1366px;
   height: 186px;
   top: -24px;
   background-image: url(${ImagemDeFundo});

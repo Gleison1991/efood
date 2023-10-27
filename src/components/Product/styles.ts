@@ -5,9 +5,10 @@ export const Card = styled.div`
   background-color: ${cores.branco};
   border: 1px solid ${cores.rosa};
   position: relative;
-  margin-top: -70px;
-  margin-right: 80px;
-  margin-bottom: 80px;
+  margin-top: -90px;
+  margin-right: 40px;
+  margin-left: -20px;
+  margin-bottom: 90px;
 `
 export const Image = styled.img`
   object-fit: cover;
