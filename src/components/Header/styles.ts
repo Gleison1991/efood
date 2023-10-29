@@ -1,24 +1,26 @@
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 import { cores } from '../../styles'
 
-import ImagemDeFundo from '../../assets/images/Vector.png'
+import Vector from '../../assets/images/Vector.png'
 
 export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1366px;
+  width: 100%;
   height: 186px;
   top: -24px;
-  background-image: url(${ImagemDeFundo});
+  background-image: url(${Vector});
   background-size: cover;
 
-  div {
-    img {
-      width: 125px;
-      height: auto;
-      margin-left: 125px;
-    }
+  nav {
+    width: calc(50% - 75px - 150px);
+  }
+
+  img {
+    width: 125px;
+    height: auto;
+    margin: auto;
   }
 
   a {
@@ -41,12 +43,6 @@ export const Links = styled.ul`
   line-height: normal;
   text-decoration: none;
 `
+export const LinkItem = styled.li``
 
-export const LinkItem = styled.li`
-  margin-left: 145px;
-`
-
-export const LinkCart = styled.a`
-  display: flex;
-  margin-right: 171px;
-`
+export const LinkCart = styled.a``

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
-
+//max-width tava em 1366px
 export const Banner = styled.div`
   position: relative;
   display: block;
   height: 280px;
-  max-width: 1366px;
+  width: 100%;
 
   background-repeat: no-repeat;
   background-position: center;

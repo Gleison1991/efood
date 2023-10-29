@@ -4,7 +4,7 @@ import { Props } from '.'
 
 export const Container = styled.section<Omit<Props, 'Pink'>>`
   padding: 80px 0;
-  max-width: 1366px;
+  max-width: 100%;
 `
 
 export const List = styled.ul`
