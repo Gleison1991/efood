@@ -49,12 +49,12 @@ export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+  font-size: 12px;
 `
 export const Avaliacao = styled.h3`
   font-weight: bold;
   font-size: 18px;
   color: ${cores.rosa};
-  margin-top: 8px;
   margin-bottom: 16px;
   margin-right: 8px;
 `
@@ -63,5 +63,14 @@ export const Estrela = styled.img`
   object-fit: cover;
   width: 21px;
   height: 21px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+`
+
+export const Destaques = styled.div`
+  background-color: ${cores.rosa};
+  color: ${cores.brancoBeije};
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 6px;
+  display: inline-block;
 `

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import Tag from '../Tag'
-
 import {
   Image,
   Infos,
@@ -9,7 +8,8 @@ import {
   Titulo,
   ContainerDescricao,
   Avaliacao,
-  Estrela
+  Estrela,
+  Destaques
 } from './styles'
 
 type Props = {
@@ -33,7 +33,7 @@ export const Product = ({
     <Image src={image} alt={title} />
     <Infos>
       {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
+        <Destaques key={info}>{info}</Destaques>
       ))}
     </Infos>
     <ContainerDescricao>
