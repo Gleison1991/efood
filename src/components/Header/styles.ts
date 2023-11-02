@@ -5,7 +5,7 @@ import Vector from '../../assets/images/Vector.png'
 
 export const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 186px;
@@ -14,10 +14,11 @@ export const HeaderContainer = styled.header`
   background-size: cover;
 
   nav {
-    width: calc(50% - 75px - 150px);
+    justify-content: space-between;
   }
 
   img {
+    display: block;
     width: 125px;
     height: auto;
     margin: auto;
@@ -28,6 +29,12 @@ export const HeaderContainer = styled.header`
     text-decoration: none;
     font-weight: bold;
   }
+`
+
+export const Headerbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 `
 
 export const Links = styled.ul`
@@ -43,6 +50,16 @@ export const Links = styled.ul`
   line-height: normal;
   text-decoration: none;
 `
-export const LinkItem = styled.li``
 
-export const LinkCart = styled.a``
+export const LinkItem = styled.li`
+  margin-top: 20px;
+  margin-right: 350px;
+  font-size: 18px;
+`
+
+export const LinkCart = styled.a`
+  margin-top: 20px;
+  width: 256px;
+  margin-left: 213px;
+  font-size: 18px;
+`

@@ -51,7 +51,7 @@ export const FooterText = styled.p`
   width: auto;
   color: ${cores.rosa};
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   line-height: normal;
   margin-top: auto;

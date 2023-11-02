@@ -24,7 +24,7 @@ export const ContainerDescricaoRest = styled.div`
 
 export const TituloRest = styled.h3`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: ${cores.rosaClaro};
   display: block;
   margin-top: 8px;

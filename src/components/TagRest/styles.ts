@@ -5,9 +5,9 @@ import { cores } from '../../styles'
 export const TagContainer = styled.div<Props>`
   background-color: ${cores.rosaClaro};
   color: ${cores.rosa};
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 8px;
+  padding: 4px 84px;
   display: inline-block;
   width: 304px;
   border: 0px solid ${cores.rosa};
