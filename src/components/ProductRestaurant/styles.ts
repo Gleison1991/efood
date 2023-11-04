@@ -38,4 +38,102 @@ export const DescricaoRest = styled.p`
   display: block;
   text-align: left;
   padding-bottom: 10px;
+  white-space: pre-line;
+`
+
+export const PopUp = styled.div`
+  width: 1024px;
+  height: 344px;
+  background-color: ${cores.rosa};
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-sizing: border-box;
+`
+
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+`
+export const PopUpContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 32px;
+`
+
+export const PopUpImage = styled.img`
+  width: 280px;
+  height: 280px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  margin-right: 24px;
+`
+
+export const PopUpText = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+
+  h2 {
+    width: 140px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+`
+
+export const PopUpTitle = styled.h2`
+  color: ${cores.branco};
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+`
+
+export const PopUpDescription = styled.p`
+  width: 656px;
+  color: ${cores.branco};
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+`
+
+export const ButomPopUp = styled.button`
+  width: 218px;
+  height: 24px;
+  color: ${cores.rosa};
+  background-color: ${cores.brancoBeije};
+  border: none;
+  margin-top: 16px;
+  font-weight: bold;
+`
+
+export const PopUpButton = styled.button`
+  width: 218px;
+  height: 24px;
+  color: ${cores.rosaClaro};
+  background-color: ${cores.brancoBeije};
+  border-radius: 4px 4px 7px 7px;
+  margin-bottom: 59px;
+`
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
 `
