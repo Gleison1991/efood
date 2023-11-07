@@ -9,7 +9,9 @@ const Header = () => (
         Restaurantes
       </LinkItem>{' '}
       {''}
-      <img src={logo} alt="Efood" />
+      <Link to="/">
+        <img src={logo} alt="Efood" title="Voltar a página inicial" />
+      </Link>
       <LinkCart as={Link} to="/carrinho">
         0 - produto(s) no carrinho
       </LinkCart>{' '}
