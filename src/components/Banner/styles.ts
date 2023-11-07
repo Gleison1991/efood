@@ -1,11 +1,11 @@
 import { cores } from '../../styles'
 import styled from 'styled-components'
 import Vector from '../../assets/images/Vector.png'
-//width: 100%;
+
 export const HeaderBar = styled.header`
   background-color: ${cores.rosaClaro};
   background-image: url(${Vector});
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;

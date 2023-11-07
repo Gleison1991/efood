@@ -110,6 +110,7 @@ export const PopUpDescription = styled.p`
 `
 
 export const ButomPopUp = styled.button`
+  cursor: pointer;
   width: 218px;
   height: 24px;
   color: ${cores.rosa};

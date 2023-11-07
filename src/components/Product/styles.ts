@@ -6,9 +6,9 @@ export const Card = styled.div`
   border: 1px solid ${cores.rosa};
   position: relative;
   margin-top: -90px;
-  margin-right: 40px;
+  margin-right: 50px;
   margin-left: -20px;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
 `
 export const Image = styled.img`
   object-fit: cover;

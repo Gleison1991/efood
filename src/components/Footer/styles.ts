@@ -17,7 +17,7 @@ export const Logo = styled.div`
   width: 125px;
   height: 58px;
   flex-shrink: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 `
 
 export const SocialIcons = styled.div`
@@ -54,5 +54,5 @@ export const FooterText = styled.p`
   font-size: 10px;
   font-weight: 400;
   line-height: normal;
-  margin-top: auto;
+  margin-top: 80px;
 `

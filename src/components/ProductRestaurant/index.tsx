@@ -74,7 +74,9 @@ export const ProductRestaurant = ({ title, description, image }: Props) => {
                 <PopUpText>
                   <h2>{mock[0].title}</h2>
                   <p>{mock[0].description}</p>
-                  <ButomPopUp>Adicionar ao carrinho - R$ 60,90</ButomPopUp>
+                  <Link to="/carrinho">
+                    <ButomPopUp>Adicionar ao carrinho - R$ 60,90</ButomPopUp>
+                  </Link>
                 </PopUpText>
               </PopUpContent>
             </PopUp>
