@@ -87,6 +87,18 @@ export const PopUpText = styled.div`
     font-weight: bold;
     margin-bottom: 16px;
   }
+
+  h3 {
+    width: 656px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: -4px;
+    color: ${cores.branco};
+  }
 `
 
 export const PopUpTitle = styled.h2`
@@ -106,7 +118,7 @@ export const PopUpDescription = styled.p`
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
 `
 
 export const ButomPopUp = styled.button`
@@ -118,6 +130,13 @@ export const ButomPopUp = styled.button`
   border: none;
   margin-top: 16px;
   font-weight: bold;
+
+  &:hover {
+    border: 1px solid ${cores.HoverDoRosa};
+    color: ${cores.HoverDoRosa};
+    transform: scale(1.03);
+    transition: transform 0.2s;
+  }
 `
 
 export const PopUpButton = styled.button`
