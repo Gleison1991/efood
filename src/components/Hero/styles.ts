@@ -6,6 +6,7 @@ export const Banner = styled.div`
   position: relative;
   display: block;
   height: 280px;
+
   width: 100%;
 
   background-repeat: no-repeat;
@@ -38,9 +39,9 @@ export const Banner = styled.div`
     justify-content: space-between;
   }
 `
-
+//h2 margin-bottom: 156px;
 export const Infos = styled.div`
-  padding: 16px;
+  padding: 9px;
   max-width: 290px;
   font-weight: bold;
 
@@ -51,6 +52,7 @@ export const Infos = styled.div`
     color: ${cores.branco};
     font-weight: 100;
     margin-bottom: 156px;
+
     margin-left: -30px;
     opacity: 0.56;
   }
@@ -59,9 +61,11 @@ export const Infos = styled.div`
     font-size: 32px;
     color: ${cores.branco};
     font-weight: bold;
+    font-style: normal;
     width: 676px;
     height: 33px;
     text-align: left;
-    margin-left: -30px;
+    margin-left: -25px;
+    flex-shrink: 0;
   }
 `

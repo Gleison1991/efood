@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const cores = {
-  rosa: '#E66767',
+  rosa: ' #E66767',
   rosaDoHover: '#E66700',
   HoverDoRosa: '#200000',
   rosaClaro: '#FFEBD9',

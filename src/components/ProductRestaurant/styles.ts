@@ -120,22 +120,21 @@ export const PopUpDescription = styled.p`
   font-weight: 400;
   line-height: 22px;
 `
-
+//margin-top: 16px;
 export const ButomPopUp = styled.button`
   cursor: pointer;
   width: 218px;
   height: 24px;
   color: ${cores.rosa};
-  background-color: ${cores.brancoBeije};
+  background-color: ${cores.rosaClaro};
   border: none;
-  margin-top: 16px;
   font-weight: bold;
+  font-size: 14px;
+  padding: 4px 7px;
+  margin-top: 16px;
 
   &:hover {
-    border: 1px solid ${cores.HoverDoRosa};
-    color: ${cores.HoverDoRosa};
-    transform: scale(1.03);
-    transition: transform 0.2s;
+    color: ${cores.preto};
   }
 `
 

@@ -5,11 +5,18 @@ import { Props } from '.'
 
 export const TagContainer = styled.div<Props>`
   background-color: ${cores.rosa};
-  color: ${cores.brancoBeije};
+  color: ${cores.rosaClaro};
   font-size: 14px;
-  font-weight: bold;
-  padding: ${(props) => (props.size === 'big' ? '4px 84px' : '4px 6px')};
+  font-weight: 700;
+  font-style: normal;
+  font-family: Roboto;
+  line-height: normal;
+  padding: 4px 6px;
   display: inline-block;
+  text-align: center;
+  width: 82px;
+  height: 24px;
+  flex-shrink: 0;
 
   &:hover {
     background-color: ${cores.rosaDoHover};

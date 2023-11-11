@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Props } from '.'
 
 export const Container = styled.section<Omit<Props, 'Pink'>>`
-  padding: 80px 0;
+  padding: 76px 0;
   max-width: 100%;
 `
 

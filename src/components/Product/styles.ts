@@ -30,7 +30,6 @@ export const Titulo = styled.h3`
   font-size: 18px;
   color: ${cores.rosa};
   display: block;
-  margin-top: 8px;
   margin-bottom: 16px;
   text-align: left;
 `
@@ -40,7 +39,7 @@ export const Descricao = styled.p`
   color: ${cores.rosa};
   display: block;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 `
 
 export const Infos = styled.div`
@@ -68,9 +67,9 @@ export const Estrela = styled.img`
 
 export const Destaques = styled.div`
   background-color: ${cores.rosa};
-  color: ${cores.brancoBeije};
+  color: ${cores.rosaClaro};
   font-size: 12px;
   font-weight: bold;
-  padding: 4px 6px;
+  padding: 6px 4px;
   display: inline-block;
 `
