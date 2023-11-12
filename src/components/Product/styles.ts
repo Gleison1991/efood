@@ -15,10 +15,10 @@ export const Image = styled.img`
   width: 486px;
   height: 217px;
 `
-
 export const ContainerDescricao = styled.div`
   padding: 8px;
   text-align: left;
+  margin-top: -4px;
 `
 export const ConDesc = styled.div`
   justify-content: space-between;

@@ -18,7 +18,7 @@ const ProductsList = ({ pratos }: Props) => (
             infos={prato.infos}
             title={prato.title}
             description={prato.description}
-            avaliacao={'4,9'}
+            avaliacao={'4.9'}
             estrela={Estrelinha}
           />
         ))}

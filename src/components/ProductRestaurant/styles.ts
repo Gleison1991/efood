@@ -24,12 +24,14 @@ export const ContainerDescricaoRest = styled.div`
 
 export const TituloRest = styled.h3`
   font-weight: bold;
+  font-style: normal;
   font-size: 16px;
   color: ${cores.rosaClaro};
   display: block;
-  margin-top: 8px;
-  margin-bottom: 16px;
+  margin-top: 6px;
+  margin-bottom: 8px;
   text-align: left;
+  line-height: normal;
 `
 export const DescricaoRest = styled.p`
   font-size: 14px;
@@ -37,7 +39,7 @@ export const DescricaoRest = styled.p`
   color: ${cores.rosaClaro};
   display: block;
   text-align: left;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   white-space: pre-line;
 `
 
@@ -120,7 +122,7 @@ export const PopUpDescription = styled.p`
   font-weight: 400;
   line-height: 22px;
 `
-//margin-top: 16px;
+
 export const ButomPopUp = styled.button`
   cursor: pointer;
   width: 218px;
