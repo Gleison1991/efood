@@ -57,7 +57,7 @@ export const LinkItem = styled.li`
   font-size: 18px;
 `
 
-export const LinkCart = styled.a`
+export const CartButton = styled.a`
   margin-top: 20px;
   width: 256px;
   margin-left: 213px;

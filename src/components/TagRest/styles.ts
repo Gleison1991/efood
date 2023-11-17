@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Props } from '.'
 import { cores } from '../../styles'
 
-export const TagContainer = styled.div<Props>`
+export const TagContainer = styled.button<Props>`
   background-color: ${cores.rosaClaro};
   color: ${cores.rosa};
   font-size: 14px;

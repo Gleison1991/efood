@@ -5,6 +5,8 @@ import TagRest from '../TagRest'
 import PizzaMargueritaDoPopUp from '../../assets/images/PizzaMargueritaDoPopUp.png'
 import Fechar from '../../assets/images/fechar.png'
 
+import { add } from '../../store/reducers/cart'
+
 import {
   CardRest,
   ContainerDescricaoRest,
@@ -19,6 +21,7 @@ import {
   PopUpText,
   ButomPopUp
 } from './styles'
+import { useDispatch } from 'react-redux'
 
 type Props = {
   title: string
@@ -54,6 +57,12 @@ export const ProductRestaurant = ({ title, description, image }: Props) => {
     definirMostrarPopUp(false)
   }
 
+  const dispatch = useDispatch()
+
+  const addToCart = () => {
+    dispatch(add)
+  }
+
   return (
     <CardRest>
       <ImageRest src={image} alt={title} />
@@ -76,7 +85,9 @@ export const ProductRestaurant = ({ title, description, image }: Props) => {
                   <p style={{ lineHeight: '22px' }}>{mock[0].description}</p>
                   <h3>Serve: de 2 a 3 pessoas</h3>
                   <Link to="/carrinho">
-                    <ButomPopUp>Adicionar ao carrinho - R$ 60,90</ButomPopUp>
+                    <ButomPopUp onClick={addToCart}>
+                      Adicionar ao carrinho - R$ 60,90
+                    </ButomPopUp>
                   </Link>
                 </PopUpText>
               </PopUpContent>
