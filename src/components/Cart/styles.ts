@@ -129,5 +129,6 @@ export const CartItem = styled.li`
     position: absolute;
     top: 74px;
     right: 8px;
+    cursor: pointer;
   }
 `
