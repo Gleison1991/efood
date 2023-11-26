@@ -34,7 +34,8 @@ const ProductsListRestaurant = ({ pratosRestaurante }: Props) => (
             description={pratoRestaurante.description}
             prato={{
               ...pratoRestaurante,
-              infos: pratoRestaurante.infos ?? defaultValueInfos // Aqui está a correção com um valor padrão
+              infos: pratoRestaurante.infos ?? defaultValueInfos,
+              preco: pratoRestaurante.preco ?? 0
             }}
           />
         ))}

@@ -13,7 +13,8 @@ const pratosRestaurante: PratoRestaurante[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
     image: Esfirra,
-    infos: ''
+    infos: '',
+    preco: 60.9
   },
   {
     id: 8,
@@ -21,7 +22,8 @@ const pratosRestaurante: PratoRestaurante[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
     image: Esfirra,
-    infos: ''
+    infos: '',
+    preco: 60.9
   },
   {
     id: 9,
@@ -29,7 +31,8 @@ const pratosRestaurante: PratoRestaurante[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
     image: Esfirra,
-    infos: ''
+    infos: '',
+    preco: 60.9
   },
   {
     id: 10,
@@ -37,7 +40,8 @@ const pratosRestaurante: PratoRestaurante[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
     image: Esfirra,
-    infos: ''
+    infos: '',
+    preco: 60.9
   },
   {
     id: 11,
@@ -45,7 +49,8 @@ const pratosRestaurante: PratoRestaurante[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
     image: Esfirra,
-    infos: ''
+    infos: '',
+    preco: 60.9
   },
   {
     id: 12,
@@ -53,7 +58,8 @@ const pratosRestaurante: PratoRestaurante[] = [
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
     image: Esfirra,
-    infos: ''
+    infos: '',
+    preco: 60.9
   }
 ]
 

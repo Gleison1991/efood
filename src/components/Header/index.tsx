@@ -1,4 +1,3 @@
-// tinha LinkCart que foi removido e deu lugar a CartButton
 import { HeaderContainer, LinkItem, CartButton, Headerbar } from './styles'
 import logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
@@ -33,6 +32,5 @@ const Header = () => {
     </HeaderContainer>
   )
 }
-//tava depois do openCart no LinkCart:   as={Link} to="/carrinho
-//agora como CartButton
+
 export default Header

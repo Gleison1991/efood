@@ -4,6 +4,7 @@ class PratoRestaurante {
   description: string
   id: number
   infos: any
+  preco: number | undefined
 
   constructor(id: number, image: string, title: string, description: string) {
     this.id = id

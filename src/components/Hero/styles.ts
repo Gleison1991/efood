@@ -39,7 +39,7 @@ export const Banner = styled.div`
     justify-content: space-between;
   }
 `
-//h2 margin-bottom: 156px;
+
 export const Infos = styled.div`
   padding: 9px;
   max-width: 290px;

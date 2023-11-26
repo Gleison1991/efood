@@ -15,6 +15,32 @@ const Cart = () => {
     dispatch(close())
   }
 
+  const formataPreco = (preco: number) => {
+    return new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    }).format(preco)
+  }
+
+  interface Item {
+    preco?: number
+    image: string
+    infos: string[]
+    title: string
+    description: string
+    id: number
+  }
+
+  const getTotalPrice = (items: Item[]): number => {
+    return items.reduce((acumulador: number, item: Item): number => {
+      if (item.preco !== undefined) {
+        return acumulador + item.preco
+      } else {
+        return acumulador
+      }
+    }, 0)
+  }
+
   return (
     <CartContainer className={isOpen ? 'is-open' : ''}>
       <Overlay onClick={closeCart} />
@@ -32,7 +58,7 @@ const Cart = () => {
           ))}
         </ul>
         <Prices>
-          Valor total <span>R$ 182, 70</span>
+          Valor total <span>{formataPreco(getTotalPrice(items))} </span>
         </Prices>
         <Button title="Clique aqui para continuar com a compra" type="button">
           Continuar com a entrega
