@@ -4,10 +4,12 @@ import logo from '../../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 
 import { open } from '../../store/reducers/cart'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootReducer } from '../../store'
 
 const Header = () => {
   const dispatch = useDispatch()
+  const { items } = useSelector((state: RootReducer) => state.cart)
 
   const openCart = () => {
     dispatch(open())
@@ -23,7 +25,9 @@ const Header = () => {
         <Link to="/">
           <img src={logo} alt="Efood" title="Voltar a página inicial" />
         </Link>
-        <CartButton onClick={openCart}>0 - produto(s) no carrinho</CartButton>{' '}
+        <CartButton onClick={openCart}>
+          {items.length} - produto(s) no carrinho
+        </CartButton>{' '}
         {''}
       </Headerbar>
     </HeaderContainer>

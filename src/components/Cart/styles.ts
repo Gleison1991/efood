@@ -50,6 +50,23 @@ export const Sidebar = styled.aside`
   }
 `
 
+export const Quantity = styled.p`
+  display: flex;
+  gap: 211px;
+  line-height: normal;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  color: ${cores.rosaClaro};
+  margin-bottom: 16px;
+
+  span {
+    display: block;
+    font-size: 14px;
+    color: ${cores.rosaClaro};
+  }
+`
+
 export const Prices = styled.p`
   display: flex;
   gap: 211px;

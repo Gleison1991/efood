@@ -12,42 +12,48 @@ const pratosRestaurante: PratoRestaurante[] = [
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
-    image: Esfirra
+    image: Esfirra,
+    infos: ''
   },
   {
     id: 8,
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
-    image: Esfirra
+    image: Esfirra,
+    infos: ''
   },
   {
     id: 9,
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
-    image: Esfirra
+    image: Esfirra,
+    infos: ''
   },
   {
     id: 10,
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
-    image: Esfirra
+    image: Esfirra,
+    infos: ''
   },
   {
     id: 11,
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
-    image: Esfirra
+    image: Esfirra,
+    infos: ''
   },
   {
     id: 12,
     description:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     title: 'Pizza Marguerita ',
-    image: Esfirra
+    image: Esfirra,
+    infos: ''
   }
 ]
 

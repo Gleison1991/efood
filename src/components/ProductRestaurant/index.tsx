@@ -5,7 +5,7 @@ import TagRest from '../TagRest'
 import PizzaMargueritaDoPopUp from '../../assets/images/PizzaMargueritaDoPopUp.png'
 import Fechar from '../../assets/images/fechar.png'
 
-import { add } from '../../store/reducers/cart'
+import { add, open } from '../../store/reducers/cart'
 
 import {
   CardRest,
@@ -22,11 +22,13 @@ import {
   ButomPopUp
 } from './styles'
 import { useDispatch } from 'react-redux'
+import Prato from '../../models/Prato'
 
 type Props = {
   title: string
   description: string
   image: string
+  prato: Prato
 }
 
 type PopUpDoPrato = {
@@ -46,7 +48,12 @@ const mock: PopUpDoPrato[] = [
   }
 ]
 
-export const ProductRestaurant = ({ title, description, image }: Props) => {
+export const ProductRestaurant = ({
+  title,
+  description,
+  image,
+  prato
+}: Props) => {
   const [mostrarPopUp, definirMostrarPopUp] = useState(false)
 
   const lidarComClique = () => {
@@ -56,11 +63,11 @@ export const ProductRestaurant = ({ title, description, image }: Props) => {
   const fecharPopUp = () => {
     definirMostrarPopUp(false)
   }
-
   const dispatch = useDispatch()
 
   const addToCart = () => {
-    dispatch(add)
+    dispatch(add(prato))
+    dispatch(open())
   }
 
   return (
@@ -84,8 +91,12 @@ export const ProductRestaurant = ({ title, description, image }: Props) => {
                   <h2>{mock[0].title}</h2>
                   <p style={{ lineHeight: '22px' }}>{mock[0].description}</p>
                   <h3>Serve: de 2 a 3 pessoas</h3>
-                  <Link to="/carrinho">
-                    <ButomPopUp onClick={addToCart}>
+                  <Link to="">
+                    <ButomPopUp
+                      type="button"
+                      title="Clique aqui para adicionar ao carrinho"
+                      onClick={addToCart}
+                    >
                       Adicionar ao carrinho - R$ 60,90
                     </ButomPopUp>
                   </Link>

@@ -20,6 +20,7 @@ const mock: PopUpDoPrato[] = [
     url: PizzaMargueritaDoPopUp
   }
 ]
+const defaultValueInfos = { detalhes: 'Informação padrão' }
 
 const ProductsListRestaurant = ({ pratosRestaurante }: Props) => (
   <Container pratosRestaurante={pratosRestaurante}>
@@ -31,6 +32,10 @@ const ProductsListRestaurant = ({ pratosRestaurante }: Props) => (
             image={pratoRestaurante.image}
             title={pratoRestaurante.title}
             description={pratoRestaurante.description}
+            prato={{
+              ...pratoRestaurante,
+              infos: pratoRestaurante.infos ?? defaultValueInfos // Aqui está a correção com um valor padrão
+            }}
           />
         ))}
       </List>
