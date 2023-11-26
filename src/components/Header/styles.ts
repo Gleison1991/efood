@@ -62,4 +62,5 @@ export const CartButton = styled.a`
   width: 256px;
   margin-left: 213px;
   font-size: 18px;
+  cursor: pointer;
 `
