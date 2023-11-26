@@ -1,7 +1,7 @@
 import { Overlay, CartContainer, Sidebar, Prices, CartItem } from './styles'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
-import { close } from '../../store/reducers/cart'
+import { close, remove } from '../../store/reducers/cart'
 
 import Button from '../Button'
 import pizzaCarrinho from '../../assets/images/pizzacarrinho.png'
@@ -41,6 +41,10 @@ const Cart = () => {
     }, 0)
   }
 
+  const removeItem = (id: number) => {
+    dispatch(remove(id))
+  }
+
   return (
     <CartContainer className={isOpen ? 'is-open' : ''}>
       <Overlay onClick={closeCart} />
@@ -53,7 +57,7 @@ const Cart = () => {
                 <h3>Pizza Marguerita</h3>
                 <span>R$ 60,90</span>
               </div>
-              <button type="button" />
+              <button onClick={() => removeItem(item.id)} type="button" />
             </CartItem>
           ))}
         </ul>
