@@ -6,6 +6,8 @@ import ComidaItaliana from '../../assets/images/comidaItaliana.png'
 import HeaderHome from '../../components/Banner'
 import Footer from '../../components/Footer'
 
+import { useGetFeaturedPratoQuery } from '../../services/api'
+
 const pratos: Prato[] = [
   {
     id: 1,
@@ -63,12 +65,20 @@ const pratos: Prato[] = [
   }
 ]
 
-const Home = () => (
-  <>
-    <HeaderHome />
-    <ProductsList pratos={pratos} />
-    <Footer />
-  </>
-)
+const Home = () => {
+  const { data: restaurant } = useGetFeaturedPratoQuery()
+
+  if (restaurant) {
+    return (
+      <>
+        <HeaderHome />
+        <ProductsList pratos={restaurant} />
+        <Footer />
+      </>
+    )
+  }
+
+  return <h4>Carregando</h4>
+}
 
 export default Home

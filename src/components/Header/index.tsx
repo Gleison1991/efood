@@ -5,13 +5,20 @@ import { Link } from 'react-router-dom'
 import { open } from '../../store/reducers/cart'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
+import { useGetFeaturedPratoQuery } from '../../services/api'
 
 const Header = () => {
+  const { data: prato, isLoading } = useGetFeaturedPratoQuery()
+
   const dispatch = useDispatch()
   const { items } = useSelector((state: RootReducer) => state.cart)
 
   const openCart = () => {
     dispatch(open())
+  }
+
+  if (!prato) {
+    return <h3>Carregando...</h3>
   }
 
   return (
