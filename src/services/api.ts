@@ -1,12 +1,12 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import Prato from '../models/Prato'
+import prato from '../models/Prato'
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://fake-api-tau.vercel.app/api/efood/'
+    baseUrl: 'https://fake-api-tau.vercel.app/api/efood'
   }),
   endpoints: (builder) => ({
-    getFeaturedPrato: builder.query<Prato, void>({
+    getFeaturedPrato: builder.query<prato[], void>({
       query: () => 'restaurantes'
     })
   })

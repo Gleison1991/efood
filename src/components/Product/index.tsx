@@ -24,7 +24,7 @@ type Props = {
 export const Product = ({
   title,
   description,
-  infos,
+  infos = [],
   image,
   avaliacao,
   estrela
