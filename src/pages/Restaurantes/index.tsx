@@ -77,6 +77,7 @@ const Restaurantes = () => {
       </>
     )
   }
+  return <h3>Carregando</h3>
 }
 
 export default Restaurantes
