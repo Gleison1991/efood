@@ -14,11 +14,11 @@ const ProductsList = ({ pratos }: Props) => (
         {pratos.map((prato) => (
           <Product
             key={prato.id}
-            image={prato.image}
+            image={prato.capa}
             infos={prato.infos}
-            title={prato.title}
-            description={prato.description}
-            avaliacao={'4.9'}
+            title={prato.titulo}
+            description={prato.descricao}
+            avaliacao={prato.avaliacao}
             estrela={Estrelinha}
           />
         ))}

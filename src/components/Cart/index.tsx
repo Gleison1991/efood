@@ -21,13 +21,13 @@ const Cart = () => {
       currency: 'BRL'
     }).format(preco)
   }
-
+  //infos: string[]
   interface Item {
     preco?: number
-    image: string
+    capa: string
     infos: string[]
-    title: string
-    description: string
+    titulo: string
+    descricao: string
     id: number
   }
 

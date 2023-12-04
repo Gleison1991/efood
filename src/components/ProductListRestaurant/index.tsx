@@ -35,7 +35,12 @@ const ProductsListRestaurant = ({ pratosRestaurante }: Props) => (
             prato={{
               ...pratoRestaurante,
               infos: pratoRestaurante.infos ?? defaultValueInfos,
-              preco: pratoRestaurante.preco ?? 0
+              preco: pratoRestaurante.preco ?? 0,
+              capa: '',
+              titulo: '',
+              descricao: '',
+              avaliacao: '',
+              nome: ''
             }}
           />
         ))}
