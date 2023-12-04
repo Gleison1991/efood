@@ -21,7 +21,7 @@ const Cart = () => {
       currency: 'BRL'
     }).format(preco)
   }
-  //infos: string[]
+
   interface Item {
     preco?: number
     capa: string
