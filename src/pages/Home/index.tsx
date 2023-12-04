@@ -1,21 +1,18 @@
 import ProductsList from '../../components/ProductsList'
-import Prato from '../../models/Prato'
 
-import Sushi from '../../assets/images/sushi.png'
-import ComidaItaliana from '../../assets/images/comidaItaliana.png'
 import HeaderHome from '../../components/Banner'
 import Footer from '../../components/Footer'
 
 import { useGetFeaturedPratoQuery } from '../../services/api'
 
 const Home = () => {
-  const { data: pratosHome } = useGetFeaturedPratoQuery()
+  const { data: restaurant } = useGetFeaturedPratoQuery()
 
-  if (pratosHome) {
+  if (restaurant) {
     return (
       <>
         <HeaderHome />
-        <ProductsList pratos={pratosHome} />
+        <ProductsList pratos={restaurant} />
         <Footer />
       </>
     )

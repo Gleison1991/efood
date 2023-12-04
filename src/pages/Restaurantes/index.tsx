@@ -67,18 +67,16 @@ const pratosRestaurante: PratoRestaurante[] = [
 const Restaurantes = () => {
   const { data: pratosDaPaginaRestaurante } = useGetFeaturedPratoQuery()
 
-  if (!pratosDaPaginaRestaurante) {
-    return null
+  if (pratosDaPaginaRestaurante) {
+    return (
+      <>
+        <Header />
+        <Hero />
+        <ProductsListRestaurant pratosRestaurante={pratosRestaurante} />
+        <Footer />
+      </>
+    )
   }
-
-  return (
-    <>
-      <Header />
-      <Hero />
-      <ProductsListRestaurant pratosRestaurante={pratosRestaurante} />
-      <Footer />
-    </>
-  )
 }
 
 export default Restaurantes
