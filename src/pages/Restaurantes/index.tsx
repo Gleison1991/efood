@@ -5,7 +5,7 @@ import Esfirra from '../../assets/images/infirra.png'
 import ProductsListRestaurant from '../../components/ProductListRestaurant'
 import Hero from '../../components/Hero'
 import Footer from '../../components/Footer'
-import { useGetFeaturedPratoQuery } from '../../services/api'
+import { useGetCardapioByRestauranteQuery } from '../../services/api'
 
 const pratosRestaurante: PratoRestaurante[] = [
   {
@@ -65,7 +65,7 @@ const pratosRestaurante: PratoRestaurante[] = [
 ]
 
 const Restaurantes = () => {
-  const { data: pratosDaPaginaRestaurante } = useGetFeaturedPratoQuery()
+  const { data: pratosDaPaginaRestaurante } = useGetCardapioByRestauranteQuery()
 
   if (pratosDaPaginaRestaurante) {
     return (

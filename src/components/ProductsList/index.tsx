@@ -20,6 +20,7 @@ const ProductsList = ({ pratos }: Props) => (
             description={prato.descricao}
             avaliacao={prato.avaliacao}
             estrela={Estrelinha}
+            idDoRestaurante={''}
           />
         ))}
       </List>

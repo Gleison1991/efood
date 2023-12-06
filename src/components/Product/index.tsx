@@ -19,6 +19,7 @@ type Props = {
   image: string
   avaliacao: string
   estrela: string
+  idDoRestaurante: string
 }
 
 export const Product = ({
@@ -27,7 +28,8 @@ export const Product = ({
   infos = [],
   image,
   avaliacao,
-  estrela
+  estrela,
+  idDoRestaurante
 }: Props) => (
   <Card>
     <Image src={image} alt={title} />
@@ -51,7 +53,7 @@ export const Product = ({
         </div>
       </div>
       <Descricao>{description}</Descricao>
-      <Link to="/restaurantes">
+      <Link to={`/restaurantes/${idDoRestaurante}`}>
         <Tag>Saiba mais</Tag>
       </Link>
     </ContainerDescricao>

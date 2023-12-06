@@ -8,10 +8,14 @@ const api = createApi({
   endpoints: (builder) => ({
     getFeaturedPrato: builder.query<prato[], void>({
       query: () => 'restaurantes'
+    }),
+    getCardapioByRestaurante: builder.query<prato[], void>({
+      query: (restauranteid) => `restaurantes?id=${restauranteid}`
     })
   })
 })
 
-export const { useGetFeaturedPratoQuery } = api
+export const { useGetFeaturedPratoQuery, useGetCardapioByRestauranteQuery } =
+  api
 
 export default api

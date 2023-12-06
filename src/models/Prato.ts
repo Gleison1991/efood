@@ -1,7 +1,3 @@
-//imagem
-//title
-//description
-//infos: string[]
 class Prato {
   capa: string
   infos: string[]
