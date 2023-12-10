@@ -1,21 +1,68 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import prato from '../models/Prato'
+
+type Product = {
+  id: number
+  price: number
+}
+
+type Address = {
+  description: string
+  city: string
+  zipCode: string
+  number: number
+  complement?: string
+}
+
+type Card = {
+  name: string
+  number: string
+  code: number
+  expires: {
+    month: number
+    year: number
+  }
+}
+
+type PurchasePayload = {
+  products: Product[]
+  delivery: {
+    receiver: string
+    address: Address
+  }
+  payment: {
+    card: Card
+  }
+}
+
+type PurchaseResponse = {
+  orderId: string
+}
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://fake-api-tau.vercel.app/api/efood/'
+    baseUrl: 'https://fake-api-tau.vercel.app/api/efood'
   }),
   endpoints: (builder) => ({
-    getFeaturedPrato: builder.query<prato[], void>({
+    getRestaurants: builder.query<Restaurant[], void>({
       query: () => 'restaurantes'
     }),
-    getCardapioByRestaurante: builder.query<prato[], void>({
-      query: (restauranteid) => `restaurantes?id=${restauranteid}`
+    getDishes: builder.query<Restaurant, string>({
+      query: (id) => `restaurantes/${id}`
+    }),
+    purchase: builder.mutation<PurchaseResponse, PurchasePayload>({
+      query: (body) => ({
+        url: 'checkout',
+        method: 'POST',
+        body
+      })
     })
   })
 })
 
-export const { useGetFeaturedPratoQuery, useGetCardapioByRestauranteQuery } =
-  api
+export const {
+  useGetRestaurantsQuery,
+  useGetDishesQuery,
+  usePurchaseMutation
+} = api
 
 export default api

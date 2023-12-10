@@ -1,39 +1,35 @@
-import {
-  Container,
-  Icon,
-  IconLink,
-  FooterText,
-  Logo,
-  SocialIcons
-} from './styles'
+import { Link } from 'react-router-dom'
 
-import logo from '../../assets/images/logo.png'
-import facebookLogo from '../../assets/images/facebookLogo.png'
-import instagramLogo from '../../assets/images/instagramLogo.png'
-import twitterLogo from '../../assets/images/twitterLogo.png'
+import logo from '../../assets/images/logo.svg'
+import twitter from '../../assets/images/twitter.svg'
+import instagram from '../../assets/images/instagram (1).svg'
+import facebook from '../../assets/images/facebook.svg'
+
+import { StyledFooter } from './styles'
 
 const Footer = () => (
-  <Container>
-    <Logo>
-      <img src={logo} alt="Logo" />
-    </Logo>
-    <SocialIcons>
-      <IconLink href="https://www.facebook.com/seu_usuario">
-        <Icon src={facebookLogo} alt="Facebook" />
-      </IconLink>
-      <IconLink href="https://www.instagram.com/seu_usuario">
-        <Icon src={instagramLogo} alt="Instagram" />
-      </IconLink>
-      <IconLink href="https://twitter.com/seu_usuario">
-        <Icon src={twitterLogo} alt="Twitter" />
-      </IconLink>
-    </SocialIcons>
-    <FooterText>
+  <StyledFooter>
+    <Link to={'/'}>
+      <img src={logo} alt="logo" />
+    </Link>
+
+    <ul>
+      <li>
+        <img src={instagram} alt="instagram" />
+      </li>
+      <li>
+        <img src={facebook} alt="facebook" />
+      </li>
+      <li>
+        <img src={twitter} alt="twitter" />
+      </li>
+    </ul>
+    <p>
       A efood é uma plataforma para divulgação de estabelecimentos, a
-      responsabilidade pela entrega, qualidade <br />
-      dos produtos é toda do estabelecimento contratado.{' '}
-    </FooterText>
-  </Container>
+      responsabilidade pela entrega, qualidade <br /> dos produtos é toda do
+      estabelecimento contratado.
+    </p>
+  </StyledFooter>
 )
 
 export default Footer

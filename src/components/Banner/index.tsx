@@ -1,19 +1,16 @@
-import { Link } from 'react-router-dom'
+import * as S from './styles'
 
-import { HeaderBar, TituloHome } from './styles'
+export type BannerProps = {
+  title: string
+  category: string
+  bgImage: string
+}
 
-import logo from '../../assets/images/logo.png'
-
-const HeaderHome = () => (
-  <HeaderBar>
-    <Link to="/">
-      <img src={logo} alt="EFOOD" />
-    </Link>
-    <TituloHome>
-      Viva experiências gastronômicas <br />
-      no conforto da sua casa
-    </TituloHome>
-  </HeaderBar>
+export const Banner = ({ title, category, bgImage }: BannerProps) => (
+  <S.Container bgImage={bgImage}>
+    <div className="container">
+      <S.Category>{category}</S.Category>
+      <S.Title>{title}</S.Title>
+    </div>
+  </S.Container>
 )
-
-export default HeaderHome

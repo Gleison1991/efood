@@ -1,24 +1,24 @@
-import ProductsList from '../../components/ProductsList'
-
-import HeaderHome from '../../components/Banner'
+import Header from '../../components/Header'
+import List from '../../components/List'
 import Footer from '../../components/Footer'
+import { Loader } from '../../components/Loader'
 
-import { useGetFeaturedPratoQuery } from '../../services/api'
+import { useGetRestaurantsQuery } from '../../services/api'
 
 const Home = () => {
-  const { data: restaurant } = useGetFeaturedPratoQuery()
+  const { data: restaurants, isLoading } = useGetRestaurantsQuery()
 
-  if (restaurant) {
-    return (
-      <>
-        <HeaderHome />
-        <ProductsList pratos={restaurant} />
-        <Footer />
-      </>
-    )
-  }
-
-  return <h4>Carregando</h4>
+  return (
+    <>
+      <Header />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <List defaultList={true} restaurants={restaurants} />
+      )}
+      <Footer />
+    </>
+  )
 }
 
 export default Home

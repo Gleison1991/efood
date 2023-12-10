@@ -1,31 +1,37 @@
-import { cores } from '../../styles'
 import styled from 'styled-components'
-import Vector from '../../assets/images/Vector.png'
+import { colors } from '../../styles'
 
-export const HeaderBar = styled.header`
-  background-color: ${cores.rosaClaro};
-  background-image: url(${Vector});
-  margin-bottom: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+import { BannerProps } from '.'
+
+type Props = Omit<BannerProps, 'category' | 'title'>
+
+export const Container = styled.div<Props>`
+  height: 280px;
   width: 100%;
-  height: 384px;
-  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(${(props) => props.bgImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  div {
+  font-size: 32px;
+  color: ${colors.white};
+
+  .container {
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
   }
 `
 
-export const TituloHome = styled.h3`
-  color: ${cores.rosa};
-  text-decoration: none;
-  margin-top: 138px;
-  font-size: 36px;
-  font-weight: bold;
+export const Category = styled.h3`
+  margin-top: 28px;
+  font-weight: lighter;
+  text-transform: capitalize;
+`
+
+export const Title = styled.h2`
+  font-weight: 900;
+  margin-bottom: 32px;
 `

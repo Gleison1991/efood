@@ -1,43 +1,17 @@
-import { HeaderContainer, LinkItem, CartButton, Headerbar } from './styles'
-import logo from '../../assets/images/logo.png'
-import { Link } from 'react-router-dom'
+import logo from '../../assets/images/logo.svg'
+import bgImage from '../../assets/images/bg.png'
 
-import { open } from '../../store/reducers/cart'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../../store'
-import { useGetFeaturedPratoQuery } from '../../services/api'
+import * as S from './styles'
 
-const Header = () => {
-  const { data: prato, isLoading } = useGetFeaturedPratoQuery()
-
-  const dispatch = useDispatch()
-  const { items } = useSelector((state: RootReducer) => state.cart)
-
-  const openCart = () => {
-    dispatch(open())
-  }
-
-  if (!prato) {
-    return <h3>Carregando...</h3>
-  }
-
-  return (
-    <HeaderContainer>
-      <Headerbar>
-        <LinkItem as={Link} to="/">
-          Restaurantes
-        </LinkItem>{' '}
-        {''}
-        <Link to="/">
-          <img src={logo} alt="Efood" title="Voltar a página inicial" />
-        </Link>
-        <CartButton onClick={openCart} title={'Veja seu carrinho'}>
-          {items.length} - produto(s) no carrinho
-        </CartButton>{' '}
-        {''}
-      </Headerbar>
-    </HeaderContainer>
-  )
-}
+const Header = () => (
+  <S.HeaderContainer style={{ backgroundImage: `url(${bgImage})` }}>
+    <img src={logo} alt="Logo" />
+    <S.Title>
+      Viva experiências gastronômicas
+      <br />
+      no conforto da sua casa
+    </S.Title>
+  </S.HeaderContainer>
+)
 
 export default Header

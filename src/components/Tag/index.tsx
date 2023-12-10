@@ -1,12 +1,7 @@
-import { TagContainer } from './styles'
+import { StyledTag } from './styles'
 
-export type Props = {
-  size?: 'small' | 'big'
+type TagProps = {
   children: string
 }
 
-const Tag = ({ children, size = 'small' }: Props) => (
-  <TagContainer size={size}>{children}</TagContainer>
-)
-
-export default Tag
+export const Tag = ({ children }: TagProps) => <StyledTag>{children}</StyledTag>
