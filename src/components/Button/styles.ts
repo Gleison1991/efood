@@ -25,5 +25,5 @@ export const ButtonContainer = styled.button<ButtonProps>`
   cursor: pointer;
   border: none;
   width: ${(props) => (props.width === 'full' ? '100%' : 'fit-content')};
-  margin-top: ${(props) => props.marginTop || '20'};
+  margin-top: ${(props) => props.marginTop || '0'};
 `

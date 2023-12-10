@@ -69,8 +69,7 @@ const Cart = () => {
               </>
             ) : (
               <p className="empty_cart-text">
-                O carrinho está vazio, adicione pelo menos um item para
-                continuar a compra
+                O carrinho está vazio, adicione algum item.
               </p>
             )}
           </>

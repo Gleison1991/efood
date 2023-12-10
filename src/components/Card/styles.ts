@@ -38,6 +38,15 @@ export const AboutContainer = styled.div`
   height: calc(100% - 217px);
 `
 
+export const AboutContainerMenu = styled.div`
+  padding: 0 8px;
+  border: 1px solid ${colors.red};
+  border-top-width: 0;
+  height: calc(100% - 217px);
+  width: 320px;
+  height: 138px;
+`
+
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
@@ -54,6 +63,14 @@ export const Description = styled.p`
   line-height: 22px;
   font-weight: 400;
   margin: 8px 0px;
+`
+
+export const DescriptionHome = styled.p`
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 16px 0px;
+  padding-bottom: 30px;
 `
 
 export const Tags = styled.div`

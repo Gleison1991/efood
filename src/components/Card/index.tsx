@@ -90,7 +90,7 @@ export const Card = ({
                 <img src={star} alt="Estrela" />
               </S.Rate>
             </S.Header>
-            <S.Description>{description}</S.Description>
+            <S.DescriptionHome>{description}</S.DescriptionHome>
             <Button
               title={`Clique aqui para abrir o menu do restaurante ${title}`}
               to={`/menu/${id}`}
@@ -106,7 +106,7 @@ export const Card = ({
             typeDefault={typeDefault}
             style={{ backgroundImage: `url(${image})` }}
           />
-          <S.AboutContainer>
+          <S.AboutContainerMenu>
             <S.Title>{title}</S.Title>
             <S.Description>{getDescricao(description)}</S.Description>
             <Button
@@ -116,7 +116,7 @@ export const Card = ({
             >
               Adicionar ao Carrinho
             </Button>
-          </S.AboutContainer>
+          </S.AboutContainerMenu>
         </>
       )}
     </S.Card>
