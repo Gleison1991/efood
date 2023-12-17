@@ -104,7 +104,11 @@ export const Card = ({
         <>
           <S.Image
             typeDefault={typeDefault}
-            style={{ backgroundImage: `url(${image})` }}
+            style={{
+              backgroundImage: `url(${image})`,
+              width: '304px',
+              height: '167px'
+            }}
           />
           <S.AboutContainerMenu>
             <S.Title>{title}</S.Title>

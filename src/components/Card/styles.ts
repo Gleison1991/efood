@@ -22,8 +22,7 @@ export const Card = styled.div<CardProps>`
 `
 
 export const Image = styled.div<CardProps>`
-  width: 304px;
-  height: 167px;
+  height: 217px;
 
   background-size: cover;
   background-repeat: no-repeat;
