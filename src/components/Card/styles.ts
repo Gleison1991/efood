@@ -22,7 +22,8 @@ export const Card = styled.div<CardProps>`
 `
 
 export const Image = styled.div<CardProps>`
-  height: 217px;
+  width: 304px;
+  height: 167px;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,6 +64,10 @@ export const Description = styled.p`
   line-height: 22px;
   font-weight: 400;
   margin: 8px 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 `
 
 export const DescriptionHome = styled.p`
