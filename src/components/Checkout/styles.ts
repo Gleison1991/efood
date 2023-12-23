@@ -7,7 +7,7 @@ type InputGroupProps = {
 }
 
 export const Container = styled.div`
-  margin-top: 32px;
+  margin-top: 0px;
   margin-bottom: 24px;
 
   h2 {
@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   ${ButtonContainer} {
-    margin-bottom: 8px;
+    margin-bottom: 1px;
   }
 
   p {

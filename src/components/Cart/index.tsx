@@ -8,7 +8,7 @@ import { close, remove, openCheckout } from '../../store/reducers/cart'
 import { getTotalPrice } from '../../utils'
 import { parseToBrl } from '../../utils'
 
-import lixeira from '../../assets/images/lixeira.svg'
+import Lixeira from '../../assets/images/lixeira.png'
 import * as S from './styles'
 
 const Cart = () => {
@@ -49,7 +49,7 @@ const Cart = () => {
                         <p>{parseToBrl(item.preco)}</p>
                       </div>
                       <button type="button" onClick={() => removeItem(item.id)}>
-                        <img src={lixeira} alt="Botão de exluir produto" />
+                        <img src={Lixeira} alt="Botão de exluir produto" />
                       </button>
                     </S.Item>
                   ))}

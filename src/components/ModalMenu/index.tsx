@@ -47,7 +47,7 @@ const ModalMenu = () => {
         <S.About>
           <h3>{nome}</h3>
           <p>{descricao}</p>
-          <p>{porcao}</p>
+          <p>Serve: {porcao}</p>
           <Button
             title="Adicionar"
             type="button"

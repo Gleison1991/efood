@@ -49,7 +49,7 @@ export const Item = styled.li`
   color: ${colors.red};
   display: flex;
   font-size: 14px;
-  margin-top: 16px;
+  margin-bottom: 16px;
 
   button {
     border: none;
@@ -57,6 +57,7 @@ export const Item = styled.li`
     bottom: 8px;
     right: 8px;
     cursor: pointer;
+    background-color: ${colors.peach};
   }
 
   h4 {
